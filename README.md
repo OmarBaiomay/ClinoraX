@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ClinoraX
 
-## Getting Started
+Premium bilingual (Arabic-first / English) landing page for **ClinoraX**, a clinic management platform — Phase 1 of a scalable healthcare SaaS.
 
-First, run the development server:
+## Stack
+
+- Next.js 15 (App Router) + TypeScript
+- Tailwind CSS v4
+- next-intl (`ar` default RTL, `en`)
+- Framer Motion + GSAP ScrollTrigger
+- Three.js (lazy, reduced-motion safe)
+- Zod form validation + stub API routes
+- Prisma schema scaffold (PostgreSQL) — not connected in Phase 1
+
+## Requirements
+
+- Node.js **20.19+** or **22+** (recommended)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+export PATH="$HOME/.local/node/bin:$PATH"  # if using local Node install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cp .env.example .env.local
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) — you will be redirected to `/ar`.
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Command | Description |
+|---|---|
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run start` | Start production server |
+| `npm run lint` | ESLint |
+| `npm run prisma:generate` | Generate Prisma client |
+| `npm run prisma:studio` | Prisma Studio (needs DB) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Phase 1 notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Demo request / contact forms validate with Zod and hit `/api/leads` & `/api/contact` stubs (no DB writes).
+- To enable persistence later:
+  1. Set a real `DATABASE_URL` in `.env.local`
+  2. `npx prisma migrate dev --name init`
+  3. Uncomment `prisma.lead.create` in the API routes
 
-## Deploy on Vercel
+## Project layout
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `src/` for marketing sections, reusable UI, `features/` domain modules, and `prisma/schema.prisma` for future clinic dashboard models (leads, staff roles, appointments).

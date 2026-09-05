@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f4f7f8;
+  --bg-elevated: #ffffff;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: #ffffff;
+  --text: #0f1c24;
+  --text-muted: #4a5d6a;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --accent-muted: #ccfbf1;
+  --accent-deep: #115e59;
+  --border: rgba(15, 28, 36, 0.14);
+  --glass-border: rgba(15, 28, 36, 0.1);
+  --shadow: 0 18px 50px rgba(15, 28, 36, 0.1);
+  --ring: rgba(13, 148, 136, 0.35);
+  --hero-glow: rgba(13, 148, 136, 0.22);
+  --grid-line: rgba(15, 28, 36, 0.05);
+  --input-bg: #ffffff;
+  --overlay: rgba(7, 16, 22, 0.62);
+  --btn-primary-bg: #0f766e;
+  --btn-primary-hover: #0d9488;
+  --btn-primary-fg: #ffffff;
+}
+
+.dark {
+  --bg: #071016;
+  --bg-elevated: #101e28;
+  --surface: rgba(16, 30, 40, 0.94);
+  --surface-strong: #142532;
+  --text: #eef4f7;
+  --text-muted: #a8bcc8;
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-muted: rgba(45, 212, 191, 0.18);
+  --accent-deep: #99f6e4;
+  --border: rgba(232, 238, 242, 0.22);
+  --glass-border: rgba(232, 238, 242, 0.16);
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+  --ring: rgba(45, 212, 191, 0.45);
+  --hero-glow: rgba(45, 212, 191, 0.18);
+  --grid-line: rgba(232, 238, 242, 0.07);
+  --input-bg: #0c1820;
+  --overlay: rgba(0, 0, 0, 0.72);
+  --btn-primary-bg: #2dd4bf;
+  --btn-primary-hover: #5eead4;
+  --btn-primary-fg: #042f2e;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --color-accent-deep: var(--accent-deep);
+  --color-border: var(--border);
+  --color-input-bg: var(--input-bg);
+  --color-overlay: var(--overlay);
+  --font-sans: var(--font-outfit);
+  --font-arabic: var(--font-tajawal);
+  --font-display: var(--font-outfit);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-outfit), var(--font-tajawal), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-tajawal), var(--font-outfit), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--accent-muted);
+  color: var(--text);
+}
+
+button:not(:disabled),
+a[href],
+[role="button"]:not([aria-disabled="true"]),
+summary,
+label[for],
+select:not(:disabled),
+input[type="checkbox"]:not(:disabled),
+input[type="radio"]:not(:disabled),
+input[type="submit"]:not(:disabled),
+input[type="button"]:not(:disabled),
+input[type="reset"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled="true"],
+select:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+.glass {
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.bg-atmosphere {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, var(--hero-glow), transparent 55%),
+    radial-gradient(ellipse 40% 30% at 100% 20%, rgba(13, 148, 136, 0.08), transparent 50%),
+    radial-gradient(ellipse 35% 25% at 0% 60%, rgba(15, 118, 110, 0.06), transparent 45%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg) 55%, var(--bg-elevated) 100%);
+}
+
+.page-canvas {
+  background:
+    radial-gradient(ellipse 90% 40% at 50% -5%, var(--hero-glow), transparent 50%),
+    radial-gradient(ellipse 45% 35% at 100% 25%, rgba(13, 148, 136, 0.07), transparent 55%),
+    radial-gradient(ellipse 40% 30% at 0% 55%, rgba(15, 118, 110, 0.05), transparent 50%),
+    radial-gradient(ellipse 50% 30% at 80% 75%, rgba(45, 212, 191, 0.04), transparent 55%),
+    radial-gradient(ellipse 45% 25% at 15% 90%, rgba(13, 148, 136, 0.05), transparent 50%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg) 40%, var(--bg-elevated) 70%, var(--bg) 100%);
+}
+
+.page-canvas-glow {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(13, 148, 136, 0.06), transparent 28%),
+    radial-gradient(circle at 78% 62%, rgba(45, 212, 191, 0.05), transparent 30%);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(180deg, black 0%, black 35%, transparent 100%);
+}
+
+.section-pad {
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.section-blend {
+  position: relative;
+}
+
+.section-blend::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 4.5rem;
+  background: linear-gradient(to bottom, color-mix(in oklab, var(--bg) 55%, transparent), transparent);
+}
+
+.section-blend::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 4.5rem;
+  background: linear-gradient(to top, color-mix(in oklab, var(--bg) 45%, transparent), transparent);
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(4deg);
+  }
+}
+
+.hero-float {
+  animation: hero-float 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float {
+    animation: none;
+  }
+}

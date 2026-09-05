@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "brand": "ClinoraX",
+    "tagline": "Run your clinic. Not the paperwork."
+  },
+  "nav": {
+    "why": "Why ClinoraX",
+    "about": "About Us",
+    "features": "Features",
+    "process": "How It Works",
+    "results": "Results",
+    "testimonials": "Testimonials",
+    "gallery": "Product Tour",
+    "faq": "FAQ",
+    "pricing": "Pricing",
+    "cta": "Book a Demo",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "brand": "ClinoraX",
+    "headline": "One platform to run your entire clinic",
+    "description": "ClinoraX unifies appointments, patient records, billing, and staff — so your team spends less time on admin and more time on care.",
+    "primaryCta": "Book a Demo",
+    "secondaryCta": "Chat on WhatsApp"
+  },
+  "trust": {
+    "clinics": "Clinics onboarded",
+    "years": "Years in operation",
+    "satisfaction": "Customer satisfaction",
+    "uptime": "Platform uptime"
+  },
+  "why": {
+    "eyebrow": "Benefits",
+    "title": "Why clinics choose ClinoraX",
+    "subtitle": "One connected system that removes admin friction from every corner of your clinic.",
+    "items": {
+      "scheduling": {
+        "title": "Smart scheduling",
+        "desc": "Drag-and-drop calendars with automatic conflict checks across every doctor."
+      },
+      "records": {
+        "title": "Unified patient records",
+        "desc": "Every visit, prescription, and lab result in one searchable file."
+      },
+      "billing": {
+        "title": "Effortless billing & insurance",
+        "desc": "Generate invoices, track claims, and reconcile payments in a few clicks."
+      },
+      "reminders": {
+        "title": "Fewer no-shows",
+        "desc": "Automated SMS and WhatsApp reminders keep patients on time."
+      },
+      "analytics": {
+        "title": "Real-time analytics",
+        "desc": "Track revenue, occupancy, and staff performance from one dashboard."
+      },
+      "security": {
+        "title": "Bank-grade security",
+        "desc": "Role-based access and encrypted records keep patient data protected."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Built by people who understand clinics",
+    "bio": "ClinoraX was founded to remove the operational friction that slows clinics down — replacing spreadsheets and paper charts with one connected system trusted by clinics across Saudi Arabia.",
+    "experience": "10+ years of combined healthcare-tech experience building the platform.",
+    "certificates": "Built with Saudi data protection standards in mind, with NPHIES-ready workflows.",
+    "achievements": "Powering scheduling and records for 500+ clinics across the Kingdom.",
+    "style": "Hands-on onboarding, Arabic-first support, and a dedicated success manager for every clinic.",
+    "labels": {
+      "experience": "Experience",
+      "certificates": "Compliance",
+      "achievements": "Reach",
+      "style": "Support"
+    }
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title": "Everything your clinic needs, connected",
+    "subtitle": "From the front desk to the back office — one system for scheduling, records, and billing.",
+    "modules": {
+      "appointments": {
+        "title": "Appointments & scheduling",
+        "desc": "Multi-doctor calendars, online booking, and automatic reminders."
+      },
+      "records": {
+        "title": "Patient records (EMR)",
+        "desc": "Digital charts, prescriptions, lab results, and visit history in one place."
+      },
+      "billing": {
+        "title": "Billing & insurance",
+        "desc": "Invoices, insurance claims, and payment tracking without spreadsheets."
+      }
+    },
+    "extras": {
+      "cloud": "Cloud-based & always up to date",
+      "mobile": "Mobile app for doctors & staff",
+      "bilingual": "Arabic & English out of the box"
+    }
+  },
+  "process": {
+    "eyebrow": "Journey",
+    "title": "How onboarding works",
+    "subtitle": "A clear path from your first demo to a fully live clinic.",
+    "steps": {
+      "demoRequest": {
+        "title": "Book a demo",
+        "desc": "Tell us about your clinic and see ClinoraX in action."
+      },
+      "setup": {
+        "title": "Setup & configuration",
+        "desc": "We configure services, staff roles, and pricing to match your clinic."
+      },
+      "migration": {
+        "title": "Data migration",
+        "desc": "We help import your existing patients and appointment history."
+      },
+      "training": {
+        "title": "Team training",
+        "desc": "Your staff gets hands-on training in Arabic or English."
+      },
+      "goLive": {
+        "title": "Go live & support",
+        "desc": "Launch with a dedicated success manager and ongoing support."
+      }
+    }
+  },
+  "results": {
+    "eyebrow": "Impact",
+    "title": "Results clinics notice within weeks",
+    "subtitle": "Numbers that reflect real operational gains — not vague promises.",
+    "stats": {
+      "efficiency": { "value": "3×", "label": "Faster front-desk workflows" },
+      "noShow": { "value": "45%", "label": "Reduction in missed appointments" },
+      "retention": { "value": "95%", "label": "Clinics still active after month one" },
+      "uptime": { "value": "99.9%", "label": "Platform uptime" }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Stories",
+    "title": "What clinic owners and staff say",
+    "subtitle": "Trust built from real day-to-day use, not a sales pitch.",
+    "videoLabel": "Video testimonial",
+    "videoSoon": "Coming soon",
+    "items": {
+      "t1": {
+        "quote": "ClinoraX cut our front-desk workload in half — scheduling used to take up my whole morning.",
+        "name": "Dr. Yousef Al-Harbi",
+        "role": "Clinic Owner, Riyadh"
+      },
+      "t2": {
+        "quote": "Our no-show rate dropped noticeably once WhatsApp reminders went live.",
+        "name": "Lama Al-Qahtani",
+        "role": "Practice Manager"
+      },
+      "t3": {
+        "quote": "Billing and insurance claims finally make sense. No more spreadsheets.",
+        "name": "Dr. Sara Al-Zahrani",
+        "role": "Dentist"
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Product Tour",
+    "title": "See ClinoraX in action",
+    "subtitle": "A closer look at scheduling, records, billing, and reports.",
+    "items": {
+      "g1": "Appointment calendar",
+      "g2": "Patient record view",
+      "g3": "Billing & invoices",
+      "g4": "Analytics dashboard",
+      "g5": "WhatsApp reminders",
+      "g6": "Staff & roles"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions clinics ask most",
+    "items": {
+      "q1": {
+        "q": "Do I need to install anything?",
+        "a": "No — ClinoraX runs entirely in the browser, with a companion mobile app for staff on the go."
+      },
+      "q2": {
+        "q": "Can I migrate data from my current system?",
+        "a": "Yes, our team helps import patients, appointments, and history during onboarding."
+      },
+      "q3": {
+        "q": "Is ClinoraX compliant with local regulations?",
+        "a": "ClinoraX is built with Saudi data protection requirements in mind and supports NPHIES-ready workflows."
+      },
+      "q4": {
+        "q": "Does it work for multi-branch clinics?",
+        "a": "Yes — manage multiple branches, doctors, and schedules from a single account."
+      },
+      "q5": {
+        "q": "What if my team needs help?",
+        "a": "Every clinic gets onboarding support and a dedicated success contact."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Choose the right plan for your clinic",
+    "subtitle": "Transparent pricing that scales from a solo practice to a multi-branch network.",
+    "discount": "15% off your first 3 months — plus a discount for multi-branch clinics.",
+    "perMonth": "/ month",
+    "popular": "Most popular",
+    "cta": "Get started",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "299",
+        "currency": "SAR",
+        "features": ["Up to 2 doctors", "Online scheduling", "Patient records (EMR)", "Email support"]
+      },
+      "growth": {
+        "name": "Growth",
+        "price": "699",
+        "currency": "SAR",
+        "features": ["Up to 8 doctors", "WhatsApp reminders", "Billing & insurance claims", "Basic analytics", "Priority support"]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "1499",
+        "currency": "SAR",
+        "features": ["Unlimited doctors & branches", "Advanced analytics & reports", "Dedicated success manager", "API & integrations"]
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Ready to modernize your clinic?",
+    "subtitle": "Book a free demo today — or reach us on WhatsApp or by phone.",
+    "trial": "Book a Demo",
+    "whatsapp": "WhatsApp",
+    "call": "Call Now"
+  },
+  "form": {
+    "title": "Request a free demo",
+    "name": "Your name",
+    "clinicName": "Clinic name",
+    "phone": "Mobile number",
+    "email": "Email (optional)",
+    "level": "Clinic size",
+    "levels": {
+      "beginner": "Solo practice",
+      "intermediate": "Small clinic (2–5 doctors)",
+      "advanced": "Multi-branch / large clinic",
+      "unsure": "Not sure"
+    },
+    "message": "Note",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "success": "Request received. We'll contact you soon.",
+    "error": "Something went wrong. Please try again.",
+    "close": "Close"
+  },
+  "footer": {
+    "blurb": "ClinoraX helps clinics manage appointments, records, and billing — all in one place.",
+    "links": "Quick links",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "metaDescription": "How ClinoraX collects, uses, and protects personal and clinical information for clinics, staff, and patients.",
+    "updated": "Last updated: 5 September 2026",
+    "intro": "This Privacy Policy explains how ClinoraX (“we”, “us”) handles personal information when you visit our website, book a demo, or use our clinic management platform. We designed it to be clear for clinic owners, staff, and the patients they serve.",
+    "back": "Back to home",
+    "contact": "Questions about privacy? Email us at",
+    "sections": {
+      "collect": {
+        "title": "Information we collect",
+        "body": "We may collect your name, clinic name, phone number, email address, clinic size, and any note you share in our demo or contact forms. Clinics using ClinoraX may also process patient and appointment data within the platform on our servers. When you browse the site, we may collect basic technical data such as browser type, device type, and approximate location derived from IP address, plus usage metrics that help us understand which pages are useful."
+      },
+      "use": {
+        "title": "How we use information",
+        "body": "We use your information to respond to demo requests, provision and support clinic accounts, share product updates, improve our website and platform, and meet operational or legal obligations. We do not sell personal information. Marketing messages (for example WhatsApp or email updates) are sent only when you have asked us to stay in touch or when they are reasonably related to a service you requested."
+      },
+      "share": {
+        "title": "Sharing with others",
+        "body": "We share information only with trusted providers who help us operate ClinoraX — such as hosting, form delivery, analytics, or messaging tools — and only to the extent needed for those services. We may also disclose information if required by Saudi law or to protect the safety of clinics, patients, or our staff."
+      },
+      "retention": {
+        "title": "How long we keep data",
+        "body": "Lead and account records are kept for as long as needed to provide services and handle follow-up, then deleted or anonymized when no longer required — unless a longer period is needed for legal, accounting, or dispute-resolution reasons. Clinical data entered by clinics is retained per the data retention terms agreed with each clinic customer."
+      },
+      "rights": {
+        "title": "Your choices and rights",
+        "body": "You may request access to the personal information we hold about you, ask us to correct inaccurate details, or request deletion where appropriate. You can also ask us to stop non-essential communications. Contact us using the email below and we will respond within a reasonable time."
+      },
+      "healthData": {
+        "title": "Handling of health information",
+        "body": "ClinoraX is a data processor for the patient and clinical information that clinics enter into the platform; the clinic remains the data controller responsible for that information. We apply strict access controls and encryption to this data and only process it as instructed by the clinic, to provide and support the service."
+      },
+      "security": {
+        "title": "Security",
+        "body": "We use reasonable administrative and technical safeguards, including encryption and role-based access controls, to protect personal and clinical information. No online system is perfectly secure, so we encourage clinics to follow good password and access hygiene and to use official contact options on this website."
+      },
+      "changes": {
+        "title": "Updates to this policy",
+        "body": "We may update this Privacy Policy from time to time. The “Last updated” date at the top will change when we do. Continued use of the website or our services after an update means you acknowledge the revised policy."
+      }
+    }
+  },
+  "termsPage": {
+    "title": "Terms of Use",
+    "metaDescription": "Terms governing use of the ClinoraX website, demo bookings, and clinic management platform.",
+    "updated": "Last updated: 5 September 2026",
+    "intro": "These Terms of Use govern your access to the ClinoraX website and related services, including demo requests and the clinic management platform. By using this site or subscribing to ClinoraX, you agree to these terms.",
+    "back": "Back to home",
+    "contact": "Questions about these terms? Email us at",
+    "sections": {
+      "acceptance": {
+        "title": "Agreement",
+        "body": "If you are booking a demo or subscribing on behalf of a clinic, you confirm that you have authority to do so and that the information you provide is accurate. If you do not agree with these terms, please do not use the website or submit demo requests."
+      },
+      "services": {
+        "title": "Our services",
+        "body": "ClinoraX offers a clinic management platform covering scheduling, patient records, billing, and related support. Website content — including pricing shown for demonstration — may change as plans, features, or availability change. A demo request does not create a subscription until we confirm pricing and terms with your clinic."
+      },
+      "accounts": {
+        "title": "Communication and accounts",
+        "body": "When you submit a form, you consent to being contacted by phone, WhatsApp, or email about your request. You are responsible for providing a reachable number and correct details. Clinic accounts are responsible for managing their own staff access and permissions within the platform."
+      },
+      "payments": {
+        "title": "Fees and refunds",
+        "body": "Subscription fees, billing cycles, and refund rules are confirmed in writing (or via official messaging) before paid subscription. Unless otherwise stated in that confirmation, fees are non-transferable. Demo prices on the marketing site are illustrative and may differ from the final offer for your clinic."
+      },
+      "conduct": {
+        "title": "Acceptable use",
+        "body": "You agree not to misuse the website or platform — for example by attempting to disrupt it, scrape content at scale, submit abusive or false information, or interfere with other clinics' data or access. We may refuse service or remove access where conduct threatens safety, privacy, or operations."
+      },
+      "ip": {
+        "title": "Intellectual property",
+        "body": "All branding, text, visuals, software, and site design remain the property of ClinoraX or its licensors. You may not copy, redistribute, reverse-engineer, or resell the platform without our prior written permission."
+      },
+      "liability": {
+        "title": "Disclaimer and limitation",
+        "body": "We strive to deliver a reliable platform, but outcomes vary by clinic and depend on correct usage. The website and services are provided on an “as available” basis. To the fullest extent permitted under applicable law, we are not liable for indirect or consequential losses arising from use of the site or platform outages outside our reasonable control."
+      },
+      "law": {
+        "title": "Governing law",
+        "body": "These terms are governed by the laws of the Kingdom of Saudi Arabia. Courts in Riyadh shall have jurisdiction over disputes arising from these terms or our services, without prejudice to any mandatory consumer protections that may apply."
+      },
+      "changes": {
+        "title": "Changes to the terms",
+        "body": "We may revise these Terms of Use periodically. The updated version will be posted on this page with a new “Last updated” date. Material changes affecting subscribed clinics may also be communicated through our usual contact channels."
+      }
+    }
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "currencyNote": "Demo pricing for display"
+  }
+}
