@@ -1,7 +1,7 @@
 export const SITE = {
   nameAr: "كلينوراكس",
   nameEn: "ClinoraX",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://clinorax.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://clinorax.b-code.tech",
   phone: process.env.NEXT_PUBLIC_PHONE ?? "+201001234567",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "201001234567",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "hello@clinorax.com",

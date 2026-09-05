@@ -1,0 +1,50 @@
+services:
+  app:
+    # Run `npm ci && npm run build` on the host/CI BEFORE this — see the
+    # comment at the top of the Dockerfile for why the build step lives
+    # outside Docker. `docker compose build` only packages .next/standalone.
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: clinorax:latest
+    container_name: clinorax
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    # depends_on:
+    #   db:
+    #     condition: service_healthy
+    networks:
+      - clinorax
+
+  # Phase 2: uncomment once the app writes leads via Prisma instead of the
+  # console.info stub in src/app/api/leads/route.ts.
+  # db:
+  #   image: postgres:16-alpine
+  #   container_name: clinorax-db
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DB: clinorax
+  #   volumes:
+  #     - clinorax_db_data:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U postgres"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+  #   networks:
+  #     - clinorax
+
+networks:
+  clinorax:
+    driver: bridge
+
+# volumes:
+#   clinorax_db_data:

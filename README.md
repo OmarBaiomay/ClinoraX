@@ -52,3 +52,32 @@ Open [http://localhost:3000](http://localhost:3000) — you will be redirected t
 ## Project layout
 
 See `src/` for marketing sections, reusable UI, `features/` domain modules, and `prisma/schema.prisma` for future clinic dashboard models (leads, staff roles, appointments).
+
+## Deployment (Docker)
+
+The image is built in two steps, deliberately:
+
+```bash
+cp .env.example .env        # fill in real NEXT_PUBLIC_SITE_URL, phone, whatsapp, email
+npm ci
+npm run build                # runs `prisma generate` first, then `next build`
+docker compose up -d --build # packages .next/standalone and runs it
+```
+
+**Why the build isn't inside the Dockerfile**: `next build`'s static-generation
+step for the marketing pages fails intermittently when run *from a `docker
+build` RUN step* specifically — reproduced across base images, with and
+without an init process, under varying system load — with a redacted
+"Server Components render" error. The same source builds cleanly every time
+on bare Node (host or CI), and a host-built artifact then runs perfectly
+inside the same container image. So the build step stays outside Docker;
+the Dockerfile only packages and serves the already-built `.next/standalone`
+output.
+
+`NEXT_PUBLIC_*` values are inlined at build time — set them correctly in
+`.env` (or your shell) **before** `npm run build`, and rebuild whenever they
+change. Runtime-only variables (e.g. `DATABASE_URL`) are still read normally
+by the running container via `docker-compose.yml`'s `env_file: .env`.
+
+Check `curl http://localhost:3000/api/health` and `docker compose logs -f`
+after starting it.
