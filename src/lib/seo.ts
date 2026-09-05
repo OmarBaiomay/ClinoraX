@@ -7,13 +7,13 @@ const meta = {
   ar: {
     title: "كلينوراكس | منصة إدارة العيادات الأولى",
     description:
-      "منصة كلينوراكس لإدارة العيادات في السعودية: مواعيد، سجلات مرضى، فوترة، وتقارير في مكان واحد. احجز عرضًا توضيحيًا مجانيًا.",
-    ogLocale: "ar_SA",
+      "منصة كلينوراكس لإدارة العيادات في مصر: مواعيد، سجلات مرضى، فوترة، وتقارير في مكان واحد. احجز عرضًا توضيحيًا مجانيًا.",
+    ogLocale: "ar_EG",
   },
   en: {
     title: "ClinoraX | The Clinic Management Platform",
     description:
-      "ClinoraX unifies appointments, patient records, billing, and reporting for clinics in Saudi Arabia. Book a free demo today.",
+      "ClinoraX unifies appointments, patient records, billing, and reporting for clinics in Egypt. Book a free demo today.",
     ogLocale: "en_US",
   },
 } as const;
@@ -40,7 +40,7 @@ export function buildMetadata(locale: Locale): Metadata {
     openGraph: {
       type: "website",
       locale: m.ogLocale,
-      alternateLocale: locale === "ar" ? ["en_US"] : ["ar_SA"],
+      alternateLocale: locale === "ar" ? ["en_US"] : ["ar_EG"],
       url,
       siteName: locale === "ar" ? SITE.nameAr : SITE.nameEn,
       title: m.title,
@@ -84,7 +84,7 @@ export function buildPageMetadata(
     openGraph: {
       type: "website",
       locale: m.ogLocale,
-      alternateLocale: locale === "ar" ? ["en_US"] : ["ar_SA"],
+      alternateLocale: locale === "ar" ? ["en_US"] : ["ar_EG"],
       url,
       siteName: locale === "ar" ? SITE.nameAr : SITE.nameEn,
       title,
@@ -114,7 +114,7 @@ export function organizationJsonLd(locale: Locale) {
     address: {
       "@type": "PostalAddress",
       addressLocality: locale === "ar" ? SITE.city : SITE.cityEn,
-      addressCountry: "SA",
+      addressCountry: "EG",
     },
     sameAs: [whatsappSameAs()],
   };
@@ -140,6 +140,6 @@ export function courseJsonLd(locale: Locale) {
       name: locale === "ar" ? SITE.nameAr : SITE.nameEn,
       sameAs: SITE.url,
     },
-    inLanguage: locale === "ar" ? "ar-SA" : "en",
+    inLanguage: locale === "ar" ? "ar-EG" : "en",
   };
 }

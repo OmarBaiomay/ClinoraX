@@ -48,7 +48,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html
-      lang={locale === "ar" ? "ar-SA" : "en"}
+      lang={locale === "ar" ? "ar-EG" : "en"}
       dir={dir}
       className={`${outfit.variable} ${tajawal.variable}`}
       suppressHydrationWarning

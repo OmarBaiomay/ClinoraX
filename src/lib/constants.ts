@@ -2,11 +2,11 @@ export const SITE = {
   nameAr: "كلينوراكس",
   nameEn: "ClinoraX",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://clinorax.com",
-  phone: process.env.NEXT_PUBLIC_PHONE ?? "+966500000000",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "966500000000",
+  phone: process.env.NEXT_PUBLIC_PHONE ?? "+201001234567",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "201001234567",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "hello@clinorax.com",
-  city: "الرياض",
-  cityEn: "Riyadh",
+  city: "القاهرة",
+  cityEn: "Cairo",
 } as const;
 
 export function whatsappUrl(message?: string) {

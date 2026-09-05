@@ -64,10 +64,10 @@
   "about": {
     "eyebrow": "About Us",
     "title": "Built by people who understand clinics",
-    "bio": "ClinoraX was founded to remove the operational friction that slows clinics down — replacing spreadsheets and paper charts with one connected system trusted by clinics across Saudi Arabia.",
+    "bio": "ClinoraX was founded to remove the operational friction that slows clinics down — replacing spreadsheets and paper charts with one connected system trusted by clinics across Egypt.",
     "experience": "10+ years of combined healthcare-tech experience building the platform.",
-    "certificates": "Built with Saudi data protection standards in mind, with NPHIES-ready workflows.",
-    "achievements": "Powering scheduling and records for 500+ clinics across the Kingdom.",
+    "certificates": "Built with Egypt's Personal Data Protection Law in mind, with workflows aligned to the Universal Health Insurance system.",
+    "achievements": "Powering scheduling and records for 500+ clinics across Egypt.",
     "style": "Hands-on onboarding, Arabic-first support, and a dedicated success manager for every clinic.",
     "labels": {
       "experience": "Experience",
@@ -148,7 +148,7 @@
       "t1": {
         "quote": "ClinoraX cut our front-desk workload in half — scheduling used to take up my whole morning.",
         "name": "Dr. Yousef Al-Harbi",
-        "role": "Clinic Owner, Riyadh"
+        "role": "Clinic Owner, Cairo"
       },
       "t2": {
         "quote": "Our no-show rate dropped noticeably once WhatsApp reminders went live.",
@@ -189,7 +189,7 @@
       },
       "q3": {
         "q": "Is ClinoraX compliant with local regulations?",
-        "a": "ClinoraX is built with Saudi data protection requirements in mind and supports NPHIES-ready workflows."
+        "a": "ClinoraX is built with Egypt's data protection requirements in mind and supports workflows aligned to the Universal Health Insurance system."
       },
       "q4": {
         "q": "Does it work for multi-branch clinics?",
@@ -212,20 +212,20 @@
     "plans": {
       "starter": {
         "name": "Starter",
-        "price": "299",
-        "currency": "SAR",
+        "price": "1,499",
+        "currency": "EGP",
         "features": ["Up to 2 doctors", "Online scheduling", "Patient records (EMR)", "Email support"]
       },
       "growth": {
         "name": "Growth",
-        "price": "699",
-        "currency": "SAR",
+        "price": "3,499",
+        "currency": "EGP",
         "features": ["Up to 8 doctors", "WhatsApp reminders", "Billing & insurance claims", "Basic analytics", "Priority support"]
       },
       "enterprise": {
         "name": "Enterprise",
-        "price": "1499",
-        "currency": "SAR",
+        "price": "6,999",
+        "currency": "EGP",
         "features": ["Unlimited doctors & branches", "Advanced analytics & reports", "Dedicated success manager", "API & integrations"]
       }
     }
@@ -283,7 +283,7 @@
       },
       "share": {
         "title": "Sharing with others",
-        "body": "We share information only with trusted providers who help us operate ClinoraX — such as hosting, form delivery, analytics, or messaging tools — and only to the extent needed for those services. We may also disclose information if required by Saudi law or to protect the safety of clinics, patients, or our staff."
+        "body": "We share information only with trusted providers who help us operate ClinoraX — such as hosting, form delivery, analytics, or messaging tools — and only to the extent needed for those services. We may also disclose information if required by Egyptian law or to protect the safety of clinics, patients, or our staff."
       },
       "retention": {
         "title": "How long we keep data",
@@ -345,7 +345,7 @@
       },
       "law": {
         "title": "Governing law",
-        "body": "These terms are governed by the laws of the Kingdom of Saudi Arabia. Courts in Riyadh shall have jurisdiction over disputes arising from these terms or our services, without prejudice to any mandatory consumer protections that may apply."
+        "body": "These terms are governed by the laws of the Arab Republic of Egypt. Courts in Cairo shall have jurisdiction over disputes arising from these terms or our services, without prejudice to any mandatory consumer protections that may apply."
       },
       "changes": {
         "title": "Changes to the terms",
